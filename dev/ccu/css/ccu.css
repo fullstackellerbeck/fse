@@ -1,0 +1,190 @@
+
+@font-face {
+  font-family: 'FuturaStd-Heavy';
+  src: url('../fonts/FuturaStd-Heavy/FuturaStd-Heavy.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/FuturaStd-Heavy/FuturaStd-Heavy.otf')  format('opentype'),
+	   url('../fonts/FuturaStd-Heavy/FuturaStd-Heavy.woff') format('woff'),
+	   url('../fonts/FuturaStd-Heavy/FuturaStd-Heavy.ttf')  format('truetype'),
+	   url('../fonts/FuturaStd-Heavy/FuturaStd-Heavy.svg#FuturaStd-Heavy') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaStd-Medium';
+  src: url('../fonts/FuturaStd-Medium/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+  	   url('../fonts/FuturaStd-Medium/FuturaStd-Medium.otf')  format('opentype'),
+	   url('../fonts/FuturaStd-Medium/FuturaStd-Medium.woff') format('woff'),
+	   url('../fonts/FuturaStd-Medium/FuturaStd-Medium.ttf')  format('truetype'),
+	   url('../fonts/FuturaStd-Medium/FuturaStd-Medium.svg#FuturaStd-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	padding-bottom: 5px;
+	font-family: 'FuturaStd-Medium' !important;
+    background-image: url('../images/bg_apple.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-position: right bottom;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;	
+}
+
+footer {
+	padding-top: 1%;
+	font-size: 11px;
+	font-style: italic;
+	color: #aaa;
+}
+
+h1 {
+	font-family: "FuturaStd-Heavy",sans-serif;
+	font-style: normal;
+	text-align: center;
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 35px;
+	font-family: "FuturaStd-Medium",sans-serif;
+	font-style: normal;
+	text-align: center;
+}
+
+h3 {
+	font-family: "FuturaStd-Heavy",sans-serif;
+	font-style: normal;
+	text-align: center;
+	font-size: 35px;
+	letter-spacing: -1px;
+}
+
+.osk-layout {
+	margin-left: 14%;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.ccu {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+	color: inherit;
+	background-color: #EBEBFA;
+}
+.kb-row {
+	margin-top: 0px;
+}
+
+.thanks-row {
+	margin-top: 50px;
+}
+
+.default-input {
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom-width: 2px;
+	border-bottom-color: #333;
+	width: 98%;
+	font-size: 35px;
+	outline: none;
+	font-family: "FuturaStd-Heavy",sans-serif;
+}
+
+.btn-primary {
+	font-family: "FuturaStd-Heavy",sans-serif;
+	background-color: #3E53A1;
+	border-radius: 0px;
+	font-size: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.button {
+	background: #3E53A1;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.btn {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.button:hover, .btn-primary:hover {
+	background-color: #333;
+}
+
+.key {
+	text-shadow: 0px 0px 0px #ffffff;
+	color: #fff;
+}
+
+.large-top-pad { padding-top: 150px;}
+
+.category-check {
+	padding: 5px;
+	font-family: "FuturaStd-Heavy",sans-serif;
+	background-color: #3E53A1;
+	font-size: 20px;
+	color: #fff;
+	margin: 5px;
+	border: 1px solid #333;
+}
+
+label {
+    font-size: 21px;
+	font-family: "FuturaStd-Medium",sans-serif;
+	font-style: normal;
+	margin-right: 40px;
+	padding-right: 40px;
+	letter-spacing: 1px;
+	margin-top: 1px;
+	margin-bottom: 2px;
+}
+
+input[type=checkbox]:not(old) {
+	width: 32px;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+
+input[type="checkbox"]:not(old) + label {
+	display: inline-block;
+	margin-left: -32px;
+	padding-left: 44px;
+	padding-top: 2px;
+	line-height: 32px;
+	background: url( ../images/check_sprite_sheet.png ) no-repeat 0 0;
+}
+
+input[type=checkbox]:not(old):checked + label{
+	background-position: 0 -33px;
+	margin-left: -32px;
+	padding-left: 44px;
+	padding-top: 2px;
+	line-height: 32px;
+}
+
+.jconfirm-box .content {
+	font-size: 20px;
+	font-family: "FuturaStd-Medium",sans-serif;
+}
+
+.jconfirm-box .title {
+	font-family: "FuturaStd-Heavy",sans-serif;
+	font-size: 25px;
+}

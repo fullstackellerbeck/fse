@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>California Credit Union</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/ccu.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="dist/css/jquery-confirm.min.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="ccu">
+      <div class="container">
+        <h1>Welcome to California Credit Union</h1>
+        <h2>Please select what you would like to talk to a representative about today</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <form id="firstForm" action="email_submit.html">
+        <input type="hidden" name="full_name" id="fullName" value="" />
+        <input type="hidden" name="e_mail" id="eMail" value="" />
+        <!-- Example row of columns -->
+        <div class="row">
+        <br /><br />
+          <div class="col-xs-6">
+            <div class="category-check"><input type="checkbox" name="category" value="Mortgages / Home Equity" id="checkMort" \><label for="checkMort"><span></span>MORTGAGES / HOME EQUITY</label></div>
+            <div class="category-check"><input type="checkbox" name="category" value="Auto Loans" id="checkAuto" \><label for="checkAuto"><span></span>AUTO LOANS</label></div>
+            <div class="category-check"><input type="checkbox" name="category" value="Investments" id="checkInvest" \><label for="checkInvest"><span></span>INVESTMENTS</label></div>
+            <div class="category-check"><input type="checkbox" name="category" value="Online / Mobile Banking" id="checkOnline" \><label for="checkOnline"><span></span>ONLINE / MOBILE BANKING</label></div>
+          </div>
+          <div class="col-xs-6">
+            <div class="category-check"><input type="checkbox" name="category" value="Credit Cards" id="checkCredit" \><label for="checkCredit"><span></span>CREDIT CARDS</label></div>
+            <div class="category-check"><input type="checkbox" name="category" value="New Accounts / New Memberships" id="checkNewAccount" \><label for="checkNewAccount"><span></span>NEW ACCOUNTS / NEW MEMBERSHIPS</label></div>
+            <div class="category-check"><input type="checkbox" name="category" value="Business Accounts" id="checkBusAcct" \><label for="checkBusAcct"><span></span>BUSINESS ACCOUNTS</label></div>
+            <div class="category-check"><input type="checkbox" name="category" value="Account Services" id="checkAcctServices" \><label for="checkAcctServices"><span></span>ACCOUNT SERVICES</label></div>
+         </div>
+        </div>
+        <br /><br /><br />
+        <div class="kb-row">
+          <center><input type="button" onclick="submitForm();" class="btn btn-primary btn-lg" role="button" value="&nbsp;&nbsp;&nbsp;CONTINUE&nbsp;&nbsp;&nbsp;" />&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" onclick="document.location.href='index.html';" class="btn btn-primary btn-lg" role="button" value="&nbsp;&nbsp;&nbsp;GO BACK&nbsp;&nbsp;&nbsp;" /></center>
+        </div>
+
+        <!--<footer>
+          <p>Legal Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </footer> -->
+      </form>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="dist/js/jquery-confirm.min.js"></script>        
+    <script type="text/javascript">
+      var results = qsParameters();
+
+      //$("#results").html(JSON.stringify(results, null, 2));    
+      $("#fullName").val( results['full_name'] );
+      $("#eMail").val( results['e_mail'] );
+
+      function submitForm() {
+        var checkedAtLeastOne = false;
+        $('input[type="checkbox"]').each(function() {
+            if ($(this).is(":checked")) {
+                checkedAtLeastOne = true;
+            }
+        });
+
+        if(checkedAtLeastOne == false ) {
+          $.alert({
+              title: 'Please select a category',
+              content: 'You must select at least one category to continue',
+              columnClass: 'col-md-6 col-md-offset-3',
+              confirmButton: 'OKAY',
+              confirmButtonClass: 'btn-primary',
+              icon: 'fa fa-info',
+              animation: 'zoom'
+          });
+        } else {
+          $( "#firstForm" ).submit();
+        }
+      }      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+body	{
+	margin: 0;
+	padding: 0;
+	font-family: georgia, "Book Antiqua", palatino, serif;
+	color: #000;
+	background: #fff;  
+}
+
+div {
+	font-family:  georgia, "Book Antiqua", palatino, serif;
+}
+
+p, th, td, li, dd, dl, dt    {
+	font-family:  georgia, "Book Antiqua", palatino, serif;
+}
+
+img.space {
+	padding: 6px;
+}
+
+strong {
+	font-weight: bold;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+	color: #C33;
+	text-decoration: underline;
+	background-color: transparent;
+}
+
+a.name, a.name:link, a.name:visited, a.name:active, a.name:hover {
+	color: #C33;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+a.subnav, a.subnav:link, a.subnav:visited, a.subnav:active {
+	color: #000;
+	text-decoration: none;
+	background-color: transparent;
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+}
+
+a.subnav:hover {
+	color: #C33;
+	text-decoration: none;
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+}
+
+dt 	{
+	font-weight: bold;
+}
+
+blockquote {
+	padding: 5px 0px 5px 10px;
+	margin: 0px 0px 0px 10px;
+}
+
+ol, li, dl, dt, dd {
+	line-height: 1.1em;
+	padding-bottom: 5px;
+}
+
+p {
+  font-size: 16px;
+	margin-top: 0;
+	padding-top: 0;
+	line-height: 1.1em;
+}	
+
+.hilite {
+	background-color: #ffff80;
+}
+
+h1	{
+	color: #472F92;
+	font-size: 24px;
+	line-height: 20px;
+}
+	
+h2	{
+	font-size: 22px;
+	color: #C33;
+}
+	
+h3	{
+	font-size: 18px;
+	color: #472F92;
+}
+	
+h4, .subhead {
+	font-size: 15px;
+	color: #C33;
+	line-height: 17px;
+}
+	
+h5	{
+	font-size: 14px;
+	color: #C33;
+}
+	
+h6	{
+	font-size: 12px;
+	color: #C33;
+}		
+
+h1, h2, h3, h4, h5, h6, .subhead {
+	font-family: verdana, helvetica, arial, sans-serif;
+	background-color: transparent;
+	font-weight: bold;
+	line-height: 1.1em;
+}
+
+.subhead2 a, .subhead2 a:link, .subhead2 a:visited, .subhead2 a:active, .subhead2 a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+	color: #472F92;
+}
+
+.subhead2 {
+	font-family: verdana, helvetica, arial, sans-serif;
+	background-color: transparent;
+	font-weight: bold;
+	line-height: 1.1em;
+	font-size: 15px;
+	color: #472F92;
+}
+	
+img	{
+	border:	0
+}
+
+.footer {
+	padding: 3px 0 0px 0;
+	font: 11px verdana, geneva, arial, helvetica, sans-serif;
+	color: #666;
+}
+
+.smallfooter {
+	padding: 3px 0 0px 0;
+	font: 10px verdana, geneva, arial, helvetica, sans-serif;
+	color: #666;
+}
+
+.smallfooter a:link, .smallfooter a:visited, .smallfooter a:active, .smallfooter a {
+	color: #666;
+	text-decoration : none;
+	font-weight: normal;
+}
+
+.smallfooter a:hover {
+	color: #666;
+	text-decoration : underline;
+	font-weight: normal;
+}
+
+.footer a:link, .footer a:visited, .footer a:active, .footer a {
+	color: #666;
+	text-decoration : none;
+	font-weight: normal;
+}
+
+.footer a:hover {
+	color: #666;
+	text-decoration : underline;
+	font-weight: normal;
+}
+
+.small {
+	font-size: 11px;
+	line-height: 1.5em;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #000;
+	font-weight: normal;
+}
+
+.med {
+	font-size: 12px;
+	line-height: 1.8em;
+	font-family: verdana, helvetica, arial, sans-serif;
+	color: #000;
+	font-weight: normal;
+}
+a.small:link, a.small:visited, a.small {
+	color: #C33;
+	text-decoration: none;
+	line-height: 13px;
+	padding: 0px;
+	margin: 0px;
+}
+
+a.small:active, a.small:hover {
+	color: #C33;
+	text-decoration: underline;
+	line-height: 13px;
+	padding: 0px;
+	margin: 0px;
+}
+
+b {
+	font-weight: bold;
+}
+
+.error {
+	color: #C33;
+}
+
+.nav {
+	font-size: 11px;
+	font-family: verdana, helvetica, arial, sans-serif;
+	font-weight: normal;
+}
+
+.nav a:link {color: #000;}
+.nav a:visited {color: #000;}
+.nav a:active, .nav a:hover {color: #C33;}
+
+
+a.navon, a.navon:link, a.navon:visited, a.navon:active {
+	color: #C33;
+	text-decoration: none;
+	background-color: transparent;
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+	font-weight: bold;
+}
+
+a.navon:hover {
+	color: #C33;
+	text-decoration: none;
+	font-family: verdana, geneva, arial, helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 12px;
+	font-weight: bold;
+}
+
+
+input.textbox, textarea  { 
+	font-size: 11px; 
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	background-color: #FFF; 
+	color: #000;
+	border: 2 solid #000;
+}
+				   
+select, optgroup, option { 
+ 	font-size: 11px; 
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #FFF; 
+	color: #000;
+}
+
+optgroup, option {
+	border-style:none;
+} 
+
+select {
+	border-style: solid;
+	border-color : #000;
+}
+				   
+input.button     { 
+	font-size: 11px; 
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	background-color: #C33; 
+	color: #FFF;
+	border: 2 solid #000;
+}
+	

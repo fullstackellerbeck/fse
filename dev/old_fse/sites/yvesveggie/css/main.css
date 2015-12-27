@@ -1,0 +1,699 @@
+/* css template for zip for netscape - pink (#ff3399)
+ */
+
+
+/* global links - parent class
+ */
+
+a:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #110011;
+	text-decoration: underline;
+}
+
+a.colorNav:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: none;
+}
+
+a.colorNav:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: none;
+}
+
+a.colorNav:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: none;
+}
+
+a.colorNav:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #110011;
+	text-decoration: none;
+}
+
+a.colorNavOn:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ddedf6;
+	text-decoration: none;
+}
+
+a.colorNavOn:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ddedf6;
+	text-decoration: none;
+}
+
+a.colorNavOn:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ddedf6;
+	text-decoration: none;
+}
+
+a.colorNavOn:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #110011;
+	text-decoration: none;
+}
+
+a.whiteNav:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	letter-spacing: -1px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a.whiteNav:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	letter-spacing: -1px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a.whiteNav:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	letter-spacing: -1px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a.whiteNav:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	letter-spacing: -1px;
+	color: #110011;
+	text-decoration: underline;
+}
+
+a.small:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 10px;
+	line-height: 10px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.small:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 10px;
+	line-height: 10px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.small:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 10px;
+	line-height: 10px;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.small:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 10px;
+	line-height: 10px;
+	color: #110011;
+	text-decoration: underline;
+}
+
+a.nav:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	letter-spacing: -1px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a.nav:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a.nav:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	text-decoration: none;
+}
+
+a.nav:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ff3333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.white:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.white:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.white:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.white:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ddeeff;
+	text-decoration: underline;
+}
+
+a.whiteBold:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.whiteBold:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.whiteBold:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.whiteBold:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ddeeff;
+	text-decoration: underline;
+}
+
+a.navSecond:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.navSecond:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.navSecond:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.navSecond:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ddeeff;
+	text-decoration: none;
+}
+
+a.navSecond:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #ddeeff;
+	text-decoration: none;
+}
+
+a.navSecondBold:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.navSecondBold:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.navSecondBold:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a.navSecondBold:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ddeeff;
+	text-decoration: none;
+}
+
+a.bold:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.bold:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.bold:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+	text-decoration: underline;
+}
+
+a.bold:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #110011;
+	text-decoration: underline;
+}
+
+a.light:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #999999;
+	text-decoration: underline;
+}
+
+a.light:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #999999;
+	text-decoration: underline;
+}
+
+a.light:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #999999;
+	text-decoration: underline;
+}
+
+a.light:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #110011;
+	text-decoration: underline;
+}
+
+/* css template for zip - blue (#3399cc)
+ */
+
+/* link color styles
+ */
+
+a.color:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+a.color:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+a.color:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+a.color:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 13px;
+	color: #c5e3f1;
+	text-decoration: underline;
+}
+
+a.colorBold:link {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+a.colorBold:visited {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+a.colorBold:active {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	color: #3399cc;
+	text-decoration: underline;
+}
+
+a.colorBold:hover {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 13px;
+	color: #c5e3f1;
+	text-decoration: underline;
+}
+
+/* list styles
+ */
+
+ul {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #666666;
+}
+
+li {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #666666;
+}
+
+ol {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #666666;
+}
+
+/* text styles
+ */
+
+.textBold {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.textBoldColor {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	color: #3399cc;
+}
+
+.textColor {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #3399cc;
+}
+
+.textSmall {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 10px;
+	line-height: 10px;
+	color: #666666;
+}
+
+.textSmallBold {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.text {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	line-height: 12px;
+	color: #666666;
+}
+
+.textBig {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 19px;
+	line-height: 20px;
+	color: #666666;
+}
+
+.textLighter {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #999999;
+}
+
+
+/* form field styles
+ */
+
+input.text {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1 #3399cc solid;
+	border-right-color: #c5e3f1;
+	border-bottom-color: #c5e3f1;
+}
+
+input.checkbox {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #3399cc;
+}
+
+input.radio {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #3399cc;
+}
+
+input.radioPale {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #3399cc;
+	background : #ddedf6;
+}
+
+input.radioBright {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #3399cc;
+	background : #eaf5fa;
+}
+
+select {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #3399cc;
+}
+
+textarea {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+	border: 1 #3399cc solid;
+	border-right-color: #c5e3f1;
+	border-bottom-color: #c5e3f1;
+}
+
+
+/* default table cell font
+ */
+
+td {
+	font-family: verdana, arial, swiss, geneva, sans serif;
+	font-size: 11px;
+	color: #666666;
+}
+
+
+/* table cell colourings
+ */
+table.bgColor {
+	background-color: #3399cc;
+}
+
+tr.bgColorMed {
+	background-color: #add6eb;
+}
+
+tr.bgColorLight {
+	background-color: #c5e3f1;
+}
+
+tr.bgColorBright {
+	background-color: #eaf5fa;
+}
+
+td.bgColor {
+	background-color: #3399cc;
+}
+
+td.bgHilite {
+	background-color: #add6eb;
+}
+
+td.bgColorBright {
+	background-color: #eaf5fa;
+}
+
+td.bgColorPale {
+	background-color: #ddedf6;
+}
+
+td.bgGrey {
+	background-color: #999999;
+}
+
+td.bgWhite {
+	background-color: #ffffff;
+}
+
+td.bgSuperLight {
+	background-color: #ebf5fa;
+}
+
+/* table cell paddings, for precicely aligning text
+ */
+
+td.topBottomLeft3px {
+	padding-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+td.topBottomLeft6px {
+	padding-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+td.topBottom6px {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+td.topBottomLeft12px {
+	padding-left: 0px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+td.topBottomLeft3px {
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+td.topBottom3px {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+td.topBottom12px {
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+
+
+
+
+/* background dotted lines
+ */
+ 
+.horizDotted {
+	background-color: #add6eb;
+}
+
+.vertDotted {
+	background-color: #add6eb;
+}

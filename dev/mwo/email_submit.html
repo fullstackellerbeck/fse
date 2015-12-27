@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>MidWestOne Bank</title>
+        <link rel="shortcut icon" href="images/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/jsKeyboard.css" type="text/css" media="screen"/>
+		<script src="js/jquery-1.10.2.min.js"></script>	
+		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+
+		<script language="javascript">
+			function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			}
+		</script>		
+	</head>
+    <body>
+        <div class="container">
+			<header>
+				<div style="float: left;"><img src="images/mwo_logo.png" /></div>
+				<div style="clear: both;"></div>
+			</header>		
+			<section class="main-container">
+				<p class="title">Information at your fingertips</p><br />
+				<p class="body-txt">Thank-you!</p>
+				<p class="body-txt">An email with a link to the pdf has been sent to your address!</p><br /><br /><br />
+				<div>
+					<div style="float: left;"><button class="btn btn-2 btn-2c" onclick="window.history.go(-2);" style="margin-left: 330px; width: 180px;">OK</button></div>
+					<div style="clear: both;"></div>
+				</div>			
+			</section>
+		</div><br />
+		
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                // When user clicks the "GO" button, execute the API request.
+                //$('#btnGo').click(function () {
+                    var appKey = 'MWVhMDkwZDctNzYzYi00MDRmLTg4NDktNzZiNjliOTMyOTIw'; //$('#txtAppKey').val();
+                    if (appKey == "") {
+                        alert("You must provide your application API key.");
+                        return;
+                    }
+
+                    // Execute the request.
+                    sendMail(appKey);
+               // });
+            });
+
+            function sendMail(appKey) {
+
+                // Get the email address that the user input.
+                var email = decodeURIComponent( getUrlVars()["email"] ); //$('#txtEmail').val();
+                email = $.trim(email);
+                if (email == '') {
+                    alert('Please enter an email address.');
+                    return;
+                }
+
+                // Update the text field with the trimmed value.
+                $('#txtEmail').val(email);
+
+                var apiUrl = "http://api.adflowdms.net";
+                // Route is in the format of "template/{templateKey}/send". 
+                var apiRoute = "v1.0/template/MJB4NJ069/send";
+                var requestUrl = apiUrl + "/" + apiRoute;
+
+                // The data that will be sent to the API in the request body.
+                var request = {
+                        recipientAddress: email,
+                        subject: "Thanks for visiting MidWestOne",
+                        parameters: {
+							"Link": decodeURIComponent( getUrlVars()["pdfLink"] ), //"http://www.midwestone.com/",
+							"LinkTitle": decodeURIComponent( getUrlVars()["pdfLink"] ), //"Requested PDF",
+                            data: "Thanks for choosing MidWestOne"
+                    }
+                };
+
+                // Convert the request body into a JSON string before sending.
+                var sRequest = JSON.stringify(request, null, 2);
+
+                // Show the request information on screen.
+                $('#apiRequestUrl').html(requestUrl);
+                $('#apiRequest').html('<pre>' + sRequest + '</pre>');
+
+                // Submit the request to the API.
+                $.ajax({
+                    type: "POST",
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader('Authorization', appKey);
+                    },
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    url: requestUrl,
+                    data: sRequest,
+                    async: false,
+                    success: function(response) {
+                        var result = response.data;
+                        // Show the result in the browser.
+                        $('#apiResult').html(result);
+                        var sResponse = JSON.stringify(response, null, 2);
+                        $('#apiResponse').html('<pre>' + sResponse + '</pre>');
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert("Request failed. Use the debug tools of your browser for more information.");
+                    }
+                });
+            }
+        </script>		
+		<script>
+			var emailAddy = getUrlVars()["email"];
+			//alert( emailAddy + " : " + parent.document.getElementById( "pdfViewport" ).src );
+		</script>		
+	</body>
+</html>

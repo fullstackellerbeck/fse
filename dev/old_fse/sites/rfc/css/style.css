@@ -1,0 +1,183 @@
+﻿/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+
+/* general styles */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#home {
+  background: url(../images/top_parallax.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  font-family: 'museo500';
+  text-shadow: 2px 2px 2px #333;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#shadow {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;
+  height: 15px;
+  background-image: linear-gradient(rgba(34, 43, 48, 0), #00B4AC);
+  background-image: -webkit-linear-gradient(rgba(34, 43, 48, 0), #00B4AC);
+  background-image: -o-linear-gradient(rgba(34, 43, 48, 0), #00B4AC);
+}
+
+#shadow-reverse {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  z-index: 3;
+  height: 15px;
+  background-image: linear-gradient(#00B4AC, rgba(34, 43, 48, 0));
+  background-image: -webkit-linear-gradient(#00B4AC, rgba(34, 43, 48, 0));
+  background-image: -o-linear-gradient(#00B4AC, rgba(34, 43, 48, 0));
+}
+
+.top-btn {
+  border: 2px #00b4ac solid;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.top-btn:hover {
+  background-color: #00b4ac;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-btn:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lead {
+  padding-top: 20px;
+  color: #fff;
+}
+
+.lead-lato {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 20px;
+  color: #fff;
+}
+
+h1 {
+  color: #fff;
+}
+
+#logos {
+  background: url( ../images/bg_half.png) repeat-x;
+  /*background-color: #00b4ac;*/
+  /*background: url(../images/top_fade.png) repeat-x fixed center; */
+}
+
+#gallery {
+  background: url( ../images/footer_lodyas.png);
+  color: #fff;
+}
+#gallery .glyphicon {
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#quote {
+  background: url(../images/program.jpg) no-repeat center center fixed; 
+  display: table;
+  height: 400px;
+  position: relative;
+  width: 100%;
+  font-family: 'museo_slab500';
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #333;
+  color: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#quote .panel {
+  opacity: 0.85;
+}
+
+footer {
+  background-color: #00b4ac;
+  padding: 20px 0;
+  font-family: 'museo_slab500';
+  text-shadow: 2px 2px 2px #333;
+  color: #fff;
+}
+footer .glyphicon {
+  color: #333333;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #306d9f;
+}
+
+@media only screen and (max-width :550px) {
+  #quote {
+    background: url(../images/program.jpg) no-repeat center center fixed; 
+    display: table;
+    height: 400px;
+    position: relative;
+    width: 100%;
+    font-family: 'museo_slab500';
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #333;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}

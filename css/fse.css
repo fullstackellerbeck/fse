@@ -1,0 +1,113 @@
+@import url( bebas.css );
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  font-family: 'Lato', sans-serif;
+}
+
+.bebas-title {
+	font-family: 'bebas_neuebold';
+	color: #fff;
+	font-size: 60px;
+}
+
+.bebas-title a, a:hover { 
+	color: #fff;
+	text-decoration: none; 
+}
+
+.bebas-title a:hover, a:hover { 
+	color: #fff;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body hr { border: solid 1px #ddd; }
+
+.col-md-12 hr { 
+	border: solid 4px #46A2DA;
+}
+
+.fse div p a { font-style: italic; }
+
+.fse { padding-bottom: 15px; }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 40px;
+	background-color: #46A2DA;
+	color: #666;
+	font-size: 14px;
+	font-style: italic;
+}
+
+.details {
+	font-style: italic;
+	font-size: 20px;
+}
+
+footer p { 
+	margin-top: 10px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.logo-img { 
+	margin-top: -5px;
+	margin-right: 10px;
+}
+
+.carousel {
+    margin-top: -10px;
+    padding-top: 5px;
+	animation-delay: 1s;
+}
+
+.carousel-indicators { bottom: -32px; }
+.carousel-indicators .active  { background-color: #888; }
+.carousel-indicators li { 
+	border: 1px solid #555;
+}
+.carousel .item img{ margin: 0 auto; } /* Align slide image horizontally center */
+.bs-example{ margin: 20px; }
+
+@media (max-width: 767px) {
+	.bebas-title::before { content: "\00a0"; }
+	.bebas-title {
+		font-family: 'bebas_neuebold';
+		color: #fff;
+		font-size: 40px;
+	}
+
+	h2 { font-size: 24px;}
+}
+
+@media (min-width: 768px; ) {
+	.fse h1 {
+		font-family: 'bebas_neuebold';
+		font-size: 50px;
+	}
+}
+

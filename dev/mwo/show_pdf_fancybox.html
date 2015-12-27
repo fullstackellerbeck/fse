@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>MidWestOne Bank</title>
+        <link rel="shortcut icon" href="images/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+		<script type="text/javascript" src="js/vendor/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	
+		<script language="javascript">
+			function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			}
+			function fixPDFzIndexIssue (idToFix) {
+				if(!idToFix) return "Please provide the id of the div to fix";
+
+				var $divToFix = $('#' + idToFix);
+
+				$divToFix.wrap("<div class='outer'></div>");
+
+				$(".outer").append("<iframe src='about:blank' class='cover'>");
+				$(".cover").css({
+					'min-width': '100%',
+					'min-height': '100%',       
+					'overflow': 'hidden',
+					'position': 'absolute',
+					'border': 'none',
+					'left': 0,
+					'top':0,
+					'z-index': -1
+				});
+			}			
+			var url = getUrlVars()["url"];
+			var referrerPage = document.referrer;
+		</script>
+	</head>
+    <body>
+        <div class="container">
+			<header>
+				<div style="float: left;"><img src="images/mwo_logo.png" /></div>
+				<div style="clear: both;"></div>
+			</header>
+			<section class="main-container">
+				<div>
+					<div style="float: left;"><p class="title">View PDF</p></div>
+					<div style="float: right;">
+						<div>
+							<div style="float: left; margin-left: 10px;"><a class="fancybox fancybox.iframe" href="email_pdf.html"><button>EMAIL</button></a></div>
+							<div style="float: left;"><button onclick="document.location.href=referrerPage;">BACK</button></div>
+							<div style="clear: both;"></div>
+						</div>
+					<div style="clear: both;"></div>
+				</div>
+				<div id="pdfDiv">
+					<iframe id="pdfViewport" src="#" style="width: 812px; height: 1343px; border: 1px #aaa solid;`"></iframe>
+				</div>
+			</section>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('.fancybox').fancybox();
+
+				document.getElementById( "pdfViewport" ).src = url;
+				fixPDFzIndexIssue( 'pdfDiv' );
+			});
+		</script>			
+	</body>
+</html>

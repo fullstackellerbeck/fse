@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>MidWestOne Bank</title>
+        <link rel="shortcut icon" href="images/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="css/jsKeyboard.css" type="text/css" media="screen"/>
+		<script src="js/vendor/jquery-1.9.1.min.js"></script>	
+		<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
+
+		<script language="javascript">
+			function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			}
+		</script>		
+	</head>
+    <body>
+        <div class="container">
+			<header>
+				<div style="float: left;"><img src="images/mwo_logo.png" /></div>
+				<div style="clear: both;"></div>
+			</header>		
+			<section class="main-container">
+				<p class="title">Information at your fingertips</p>
+				<p class="body-txt">Please enter your email address below to receive a PDF version of this document</p>
+				<div style="margin-top: 60px;">
+					<form action="email_submit.html" id="emailForm">
+						<input type="hidden" name="pdfLink" value="" id="pdfLinkValue" />
+						<p>
+							<p class="body-txt">Email Address</p><br />
+							<div style="font-family: sans-serif; font-size: 25px; color: #dd0000; display: none; margin-bottom: 10px;" id="emailError"><b>Sorry, this email doesn't look valid, please try again.</b></div>
+							<input type="text" id="emailAddy" name="email" style="outline: none; font-size: 35px; width: 100%; display: block; border-top: 0px; border-right: 0px; border-left: 0px;" onclick="document.getElementById('emailError').style.display='none'; this.value='';" value="" />
+						</p><br /><br />
+					</form>	
+					<div id="virtualKeyboard"></div><br /><br />
+					<div>
+						<div style="float: left;"><button class="btn btn-2 btn-2c" id="submitIt" onclick="checkSubmit();" style="margin-left: 260px;">Submit</button></div> 
+						<div style="float: left;"><button class="btn btn-2 btn-2c" id="submitIt" onclick="window.history.go(-1);" style="margin-left: 10px;">Cancel</button></div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<br />
+		<script>
+			var url = getUrlVars()["pdf"];
+			$( "#emailAddy" ).focus();
+			document.getElementById( "pdfLinkValue" ).value = url;
+			
+			function validate(mail) {  
+				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test( mail )) {  
+					return (true);
+				} else {
+					return (false);
+				}
+			}
+
+			function checkSubmit() {
+				if( validate( document.getElementById( 'emailAddy' ).value ) ) {
+					document.getElementById('emailForm').submit();
+				} else {
+					document.getElementById( 'emailError' ).style.display = 'block';
+				}
+			}
+		</script>		
+        	
+        <script type="text/javascript" src="js/jsKeyboard.js"></script>
+        <script src="js/main.js"></script>		
+	</body>
+</html>
